@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الأستاذ جمال حيرش</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        header { background: #007BFF; color: white; padding: 20px; font-size: 24px; }
+        section { padding: 20px; }
+        .container { width: 80%; margin: auto; }
+        .profile-img { width: 150px; border-radius: 50%; }
+        .social-links a { margin: 0 10px; text-decoration: none; color: #007BFF; }
+        .books, .ads, .video, .earnings { margin-top: 20px; }
+        .upload { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>صفحة الأستاذ جمال حيرش للتمتير ودراسة الأسعار</header>
+    <section>
+        <div class="container">
+            <img src="profile.jpg" alt="صورتي الشخصية" class="profile-img">
+            <h2>الأستاذ جمال حيرش</h2>
+            <p>متخصص في التمتير ودراسة الأسعار</p>
+        </div>
+    </section>
+    
+    <section class="ads">
+        <div class="container">
+            <h2>الإعلانات</h2>
+            <div id="ads-content"></div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <h2>فيديوهات تعليمية</h2>
+            <div id="video-content"></div>
+        </div>
+    </section>
+
+    <section class="earnings">
+        <div class="container">
+            <h2>فرص الربح من الإنترنت</h2>
+            <div id="earnings-content"></div>
+        </div>
+    </section>
+
+    <section class="books">
+        <div class="container">
+            <h2>مكتبة الكتب</h2>
+            <p>قم بتحميل أو رفع الكتب المتعلقة بالمجال.</p>
+            <a href="books/sample_book.pdf" download>تحميل كتاب</a>
+        </div>
+    </section>
+
+    <section class="upload">
+        <div class="container">
+            <h2>رفع كتاب</h2>
+            <input type="file" id="fileUpload">
+            <button onclick="uploadFile()">رفع</button>
+        </div>
+    </section>
+
+    <section class="social-links">
+        <div class="container">
+            <h2>تواصل معي</h2>
+            <p>يمكنك التواصل معي عبر فيسبوك:</p>
+            <a href="https://www.facebook.com/profile.php?id=61573052436941" target="_blank">صفحتي على فيسبوك</a>
+        </div>
+    </section>
+
+    <!-- ربط ملف JavaScript بـ HTML -->
+    <script src="dynamicContent.js"></script>
+</body>
+</html>
